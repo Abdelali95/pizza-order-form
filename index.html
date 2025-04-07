@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Order Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza Order Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <h1>Pizza Order Form</h1>
-    <form action="#" method="post">
-        <label for="name">Customer Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+    <h1 style="text-align: center;">Pizza Order Form</h1>
+  <img src="pizza.jpg" alt="Delicious Pizza" style="display: block; margin: 0 auto; max-width: 40%; border-radius: 12px;" />
 
-        <label for="size">Pizza Size:</label>
-        <select id="size" name="size">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-        </select><br><br>
+  <form action="#" method="post">
+    <label for="name">Customer Name:</label>
+    <input type="text" id="name" name="name" required />
 
-        <label>Toppings:</label><br>
-        <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
-        <input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms<br>
-        <input type="checkbox" name="toppings" value="Extra Cheese"> Extra Cheese<br>
-        <input type="checkbox" name="toppings" value="Olives"> Olives<br><br>
+    <label for="size">Pizza Size:</label>
+    <select id="size" name="size">
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="large">Large</option>
+    </select>
 
-        <label for="instructions">Delivery Instructions:</label><br>
-        <textarea id="instructions" name="instructions" rows="4" cols="30"></textarea><br><br>
+    <fieldset class="toppings">
+        <legend>Toppings:</legend>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni</label>
+          <label><input type="checkbox" name="toppings" value="Mushrooms"> Mushrooms</label>
+          <label><input type="checkbox" name="toppings" value="Extra Cheese"> Extra Cheese</label>
+          <label><input type="checkbox" name="toppings" value="Olives"> Olives</label>
+        </div>
+      </fieldset>
+      
 
-        <button type="submit">Place Order</button>
-    </form>
+    <label for="instructions">Delivery Instructions:</label>
+    <textarea id="instructions" name="instructions" rows="4" cols="30"></textarea>
 
-    <h2>Sample Orders</h2>
-    <table border="1">
-        <tr>
-            <th>Name</th>
-            <th>Size</th>
-            <th>Toppings</th>
-            <th>Special Instructions</th>
-        </tr>
-        <tr>
-            <td>John Doe</td>
-            <td>Large</td>
-            <td>Pepperoni, Extra Cheese</td>
-            <td>No onions</td>
-        </tr>
-        <tr>
-            <td>Jane Smith</td>
-            <td>Medium</td>
-            <td>Mushrooms, Olives</td>
-            <td>Extra crispy crust</td>
-        </tr>
-        <tr>
-            <td>Mike Johnson</td>
-            <td>Small</td>
-            <td>Pepperoni</td>
-            <td>Leave at doorstep</td>
-        </tr>
-    </table>
+    <button type="submit">Place Order</button>
+  </form>
+
+  <h2>Sample Orders</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Size</th>
+      <th>Toppings</th>
+      <th>Special Instructions</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>Large</td>
+      <td>Pepperoni, Extra Cheese</td>
+      <td>No onions</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>Medium</td>
+      <td>Mushrooms, Olives</td>
+      <td>Extra crispy crust</td>
+    </tr>
+    <tr>
+      <td>Mike Johnson</td>
+      <td>Small</td>
+      <td>Pepperoni</td>
+      <td>Leave at doorstep</td>
+    </tr>
+  </table>
 </body>
 </html>

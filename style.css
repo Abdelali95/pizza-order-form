@@ -1,0 +1,94 @@
+/* Body Styling */
+body {
+    background-color: #fff7e6;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Headings */
+  h1, h2 {
+    color: #d62828;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Pizza Image */
+  img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+  
+  /* Form Styling */
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Inputs, Textarea, Select */
+  input, textarea, select {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  /* Button */
+  button {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+    display: block;
+    padding: 12px;
+    background-color: #f77f00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #d62828;
+  }
+  
+  /* Toppings Section */
+  fieldset.toppings {
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  
+  .toppings label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
